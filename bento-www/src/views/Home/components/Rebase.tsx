@@ -59,7 +59,7 @@ const Rebase: React.FC<RebaseProps> = ({ nextRebase }) => {
             </StyledCountdown>
           </Dial>
           <StyledSpacer />
-          <Button disabled={!canRebase} onClick={onRebase}  text="Rebase" />
+          <Button disabled={!nextRebase || nextRebase > 0} onClick={onRebase}  text="Rebase" />
         </CardContent>
       </Card>
     </StyledRebase>
