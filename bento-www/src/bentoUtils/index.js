@@ -138,9 +138,13 @@ export const getCirculatingSupply = async (bento) => {
 }
 
 export const getRebaseStatus = async (bento) => {
-  let now = await bento.web3.eth.getBlock('latest').then(res => res.timestamp);
-  let lastRebaseTimestampSec = await bento.contracts.rebaser.methods.lastRebaseTimestampSec().call();
-  return now >= lastRebaseTimestampSec + 60 * 60 * 24 * 1000;
+  try {
+    let now = await bento.web3.eth.getBlock('latest').then(res => res.timestamp);
+    let lastRebaseTimestampSec = Number(await bento.contracts.rebaser.methods.lastRebaseTimestampSec().call());
+    return now >= lastRebaseTimestampSec + 60 * 60 * 24 && (now % 86400) <= 60 * 60;
+  } catch (e) {
+    console.log(e)
+  }
 }
 
 export const getNextRebaseTimestamp = async (bento) => {
