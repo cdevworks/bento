@@ -627,7 +627,7 @@ contract BENTOYFIPool is LPTokenWrapper, IRewardDistributionRecipient {
     IERC20 public bento = IERC20(0x777800323Df8F098F93ECf6C2ab3c80EceA87c87);
     uint256 public constant DURATION = 5184000; // 30 days
 
-    uint256 public starttime = 1599372000; // 2020-08-20 00:00:00 (UTC +00:00)
+    uint256 public starttime = 1599429600; // 2020-08-20 00:00:00 (UTC +00:00)
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
     uint256 public lastUpdateTime;
