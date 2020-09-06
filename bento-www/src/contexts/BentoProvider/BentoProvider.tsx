@@ -26,7 +26,7 @@ const BentoProvider: React.FC = ({ children }) => {
     if (ethereum) {
       const bentoLib = new Bento(
         ethereum,
-        "1",
+        "42",
         false, {
           defaultAccount: "",
           defaultConfirmations: 1,
