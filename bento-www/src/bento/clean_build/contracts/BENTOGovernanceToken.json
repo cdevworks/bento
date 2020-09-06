@@ -1718,7 +1718,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 22458,
+                                "referencedDeclaration": 22216,
                                 "src": "1883:4:26",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_BENTOGovernanceToken_$21827",
@@ -9328,7 +9328,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 22458,
+                                "referencedDeclaration": 22216,
                                 "src": "1883:4:26",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_BENTOGovernanceToken_$21827",
@@ -16190,7 +16190,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-06T04:24:28.216Z",
+  "updatedAt": "2020-09-06T05:28:21.448Z",
   "devdoc": {
     "methods": {
       "delegate(address)": {

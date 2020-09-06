@@ -1851,7 +1851,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 22460,
+                              "referencedDeclaration": 22218,
                               "src": "589:4:23",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_BENTOToken_$20586",
@@ -11262,7 +11262,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 22463,
+                        "referencedDeclaration": 22221,
                         "src": "11445:5:23",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_BENTO_$20652",
@@ -12791,7 +12791,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 22460,
+                              "referencedDeclaration": 22218,
                               "src": "589:4:23",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_BENTOToken_$20586",
@@ -22202,7 +22202,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 22463,
+                        "referencedDeclaration": 22221,
                         "src": "11445:5:23",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_BENTO_$20652",
@@ -22910,7 +22910,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-06T04:24:27.592Z",
+  "updatedAt": "2020-09-06T05:28:21.361Z",
   "devdoc": {
     "methods": {
       "_setIncentivizer(address)": {
