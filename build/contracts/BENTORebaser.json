@@ -49380,9 +49380,188 @@
     "name": "solc",
     "version": "0.5.17+commit.d19bba13.Linux.g++"
   },
-  "networks": {},
+  "networks": {
+    "42": {
+      "events": {
+        "0x2a5cda4d16fba415b52d90b59ee30d4cb16494da9fd1ee51c4d5bac4a1f75bbe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "oldDeviationThreshold",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newDeviationThreshold",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewDeviationThreshold",
+          "type": "event"
+        },
+        "0x1f14cfc03e486d23acee577b07bc0b3b23f4888c91fcdba5e0fef5a2549d5523": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldGov",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newGov",
+              "type": "address"
+            }
+          ],
+          "name": "NewGov",
+          "type": "event"
+        },
+        "0xe21b25c4eda0340cd924f3247795d0acde6c304b68ae77657bb2d4e840198bf8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "oldSlippageFactor",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newSlippageFactor",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewMaxSlippageFactor",
+          "type": "event"
+        },
+        "0x6163d5b9efd962645dd649e6e48a61bcb0f9df00997a2398b80d135a9ab0c61e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldPendingGov",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newPendingGov",
+              "type": "address"
+            }
+          ],
+          "name": "NewPendingGov",
+          "type": "event"
+        },
+        "0x59b3ffce759ec92c629beee27554d8fbc2ca1a05020fa0cf500c890c172094be": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "oldRebaseMintPerc",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newRebaseMintPerc",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewRebaseMintPercent",
+          "type": "event"
+        },
+        "0xce840d2205f08f33375689943da5da9fdfde146fcbb5553b17910a60c8284a20": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldReserveContract",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newReserveContract",
+              "type": "address"
+            }
+          ],
+          "name": "NewReserveContract",
+          "type": "event"
+        },
+        "0x8091ecaaa54ebb82e02d36c2c336528e0fcb9b3430fc1291ac88295032b9c263": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "destination",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "name": "TransactionFailed",
+          "type": "event"
+        },
+        "0xb335015c214ae37ed112cc5eb042235c0ea40a7617987e1bd847839143872350": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "reservesAdded",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bentosSold",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bentosFromReserves",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bentosToReserves",
+              "type": "uint256"
+            }
+          ],
+          "name": "TreasuryIncreased",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xff2CFABdB4C28b63671b0B8F93014867B5DCeD5A",
+      "transactionHash": "0x6caaeaeb0e4898914bd3205bf36b19b0386c2256feb2792484dd406b7879823a"
+    }
+  },
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-06T04:24:28.103Z",
+  "updatedAt": "2020-09-06T04:35:22.021Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "_setPendingGov(address)": {

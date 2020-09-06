@@ -6058,9 +6058,75 @@
     "name": "solc",
     "version": "0.5.17+commit.d19bba13.Linux.g++"
   },
-  "networks": {},
+  "networks": {
+    "42": {
+      "events": {
+        "0x1f14cfc03e486d23acee577b07bc0b3b23f4888c91fcdba5e0fef5a2549d5523": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldGov",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newGov",
+              "type": "address"
+            }
+          ],
+          "name": "NewGov",
+          "type": "event"
+        },
+        "0x6163d5b9efd962645dd649e6e48a61bcb0f9df00997a2398b80d135a9ab0c61e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldPendingGov",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newPendingGov",
+              "type": "address"
+            }
+          ],
+          "name": "NewPendingGov",
+          "type": "event"
+        },
+        "0x51f448520e2183de499e224808a409ee01a1f380edb2e8497572320c15030545": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldRebaser",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newRebaser",
+              "type": "address"
+            }
+          ],
+          "name": "NewRebaser",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x324E41f285baCC6B632595B622A208f84C3F8a34",
+      "transactionHash": "0x62aeb7703c3e3291af281e3ed8642948c6c6c69fa2cb1a533b0e32647057194e"
+    }
+  },
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-06T04:24:28.144Z",
+  "updatedAt": "2020-09-06T04:35:21.993Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "_setPendingGov(address)": {
