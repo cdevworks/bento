@@ -597,7 +597,7 @@ contract LPTokenWrapper {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
-    IERC20 public yfi = IERC20(0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e);
+    IERC20 public yfi = IERC20(0xa36085F69e2889c224210F603D836748e7dC0088);
 
     uint256 private _totalSupply;
     mapping(address => uint256) private _balances;
