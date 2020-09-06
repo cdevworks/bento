@@ -2,7 +2,7 @@ import json
 import os
 from pprint import pprint
 networkId = "1"
-networkId2 = "1001"
+networkId2 = "42"
 from os import listdir
 from os.path import isfile, join
 mypath = os.getcwd() + "/build/contracts/"
