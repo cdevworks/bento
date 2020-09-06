@@ -21,10 +21,10 @@ module.exports = migration;
 async function deployToken(deployer, network) {
   await deployer.deploy(BENTOImplementation);
   await deployer.deploy(BENTOProxy,
-    "BENTO",
-    "BENTO",
+    "X1001",
+    "X1001",
     18,
-    "2000000000000000000000000",
+    "175000000000000000000000",
     BENTOImplementation.address,
     "0x"
   );
