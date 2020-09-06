@@ -7,8 +7,8 @@ import useBento from '../../../hooks/useBento'
 import Card from '../../../components/Card'
 import CardContent from '../../../components/CardContent'
 import Loader from '../../../components/Loader'
-import useFarms from '../../../hooks/useFarms'
-import { Farm } from '../../../contexts/Farms'
+import useBoxes from '../../../hooks/useBoxes'
+import { Box } from '../../../contexts/Boxes'
 import { getPoolStartTime } from '../../../bentoUtils'
 import { getDisplayBalance } from '../../../utils/formatBalance'
 import { getStats } from '../../../views/Home/utils'
@@ -22,9 +22,9 @@ export interface BentoContext {
 const ADDRESS = '0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB';
 let currentPrice = 0;
 let bento: any;
-const FarmCards: React.FC = () => {
+const BoxCards: React.FC = () => {
 
-  const [farms] = useFarms()
+  const [boxes] = useBoxes()
   bento = useBento()
   const [{
     circSupply,
@@ -60,13 +60,13 @@ const FarmCards: React.FC = () => {
     <div>
       {currentPrice ? priceBlock() : ''}
       <StyledCards>
-        {farms.length ? farms.map((farm, i) => (
+        {boxes.length ? boxes.map((box, i) => (
           <React.Fragment key={i}>
-            <StaticsCard farm={farm} price={currentPrice}/>
+            <StaticsCard box={box} price={currentPrice}/>
           </React.Fragment>
         )) : (
             <StyledLoadingWrapper>
-              <Loader text="Loading farms" />
+              <Loader text="Loading boxes" />
             </StyledLoadingWrapper>
           )}
       </StyledCards>
@@ -75,18 +75,18 @@ const FarmCards: React.FC = () => {
 }
 
 interface StaticsCardProps {
-  farm: Farm,
+  box: Box,
   price: number,
 }
 let loaded = false;
 
-const StaticsCard: React.FC<StaticsCardProps> = ({ farm, price }) => {
+const StaticsCard: React.FC<StaticsCardProps> = ({ box, price }) => {
   const [data, setData] = useState(null)
 
 
   const getData = useCallback(async () => {
     const selfAddress = bento.web3.currentProvider.selectedAddress;
-    const token = farm.depositToken;
+    const token = box.depositToken;
     let ah:any = {'weth': 'eth_pool', 'uni_lp': 'ycrvUNIV_pool'};
     let key = ah[token] || `${token}_pool`
 
@@ -154,12 +154,12 @@ const StaticsCard: React.FC<StaticsCardProps> = ({ farm, price }) => {
       weeklyROI
     })
 
-  }, [farm, setData]);
+  }, [box, setData]);
 
 
   useEffect(() => {
     getData()
-  }, [farm, getData])
+  }, [box, getData])
 
 
   const DataDetail = (data: any) => {
@@ -196,13 +196,13 @@ const StaticsCard: React.FC<StaticsCardProps> = ({ farm, price }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.id === 'uni_lp' && (
+      {box.id === 'uni_lp' && (
         <StyledCardAccent />
       )}
       <Card>
         <CardContent>
           <StyledContent>
-            <StyledTitle>{farm.icon}{farm.name}</StyledTitle>
+            <StyledTitle>{box.icon}{box.name}</StyledTitle>
             <StyledDetails>
               {data ? DataDetail(data) : "Loading..."}
             </StyledDetails>
@@ -328,5 +328,5 @@ const lookUpPrices = async function(id_array: any) {
   return res.json()
 }
 
-export default FarmCards
+export default BoxCards
 

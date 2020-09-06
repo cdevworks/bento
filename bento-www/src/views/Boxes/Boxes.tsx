@@ -6,17 +6,17 @@ import {
 } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import farmer from '../../assets/img/farmer.png'
+import boxer from '../../assets/img/boxer.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'
 import PageHeader from '../../components/PageHeader'
 
-import Farm from '../Farm'
+import Box from '../Box'
 
-import FarmCards from './components/FarmCards'
+import BoxCards from './components/BoxCards'
 
-const Farms: React.FC = () => {
+const Boxes: React.FC = () => {
   const { path } = useRouteMatch()
   const { account, connect } = useWallet()
   return (
@@ -26,14 +26,14 @@ const Farms: React.FC = () => {
         <>
           <Route exact path={path}>
             <PageHeader
-              icon={<img src={farmer} height="96" />}
+              icon={<img src={boxer} height="96" />}
               subtitle="Earn BENTO tokens by providing liquidity."
-              title="Select a farm."
+              title="Select a box."
             />
-            <FarmCards />
+            <BoxCards />
           </Route>
-          <Route path={`${path}/:farmId`}>
-            <Farm />
+          <Route path={`${path}/:boxId`}>
+            <Box />
           </Route>
         </>
       ) : (
@@ -55,4 +55,4 @@ const Farms: React.FC = () => {
 }
 
 
-export default Farms
+export default Boxes

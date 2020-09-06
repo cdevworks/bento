@@ -50,7 +50,7 @@ const Home: React.FC = () => {
     <Page>
       {countdownBlock()}
 
-      <PageHeader icon="🍱" subtitle="It's a great day to farm BENTOs. (without wrong rebase)" title="Welcome" />
+      <PageHeader icon="🍱" subtitle="It's a great day to box BENTOs. (without wrong rebase)" title="Welcome" />
 
       <StyledOverview>
         <Rebase nextRebase={nextRebase} />

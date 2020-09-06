@@ -7,14 +7,14 @@ import useBento from '../../hooks/useBento'
 import { getPoolContracts } from '../../bentoUtils'
 
 import Context from './context'
-import { Farm } from './types'
+import { Box } from './types'
 
 const NAME_FOR_POOL: { [key: string]: string } = {
   eth_pool: 'Weth Homestead',
   yam_pool: 'YAM',
   crv_pool: 'Curvy Fields',
-  yfi_pool: 'YFI Farm',
-  yfii_pool: 'YFII Farm',
+  yfi_pool: 'YFI Box',
+  yfii_pool: 'YFII Box',
   comp_pool: 'Compounding Hills',
   link_pool: 'Marine Gardens',
   lend_pool: 'Aave Agriculture',
@@ -37,15 +37,15 @@ const ICON_FOR_POOL: { [key: string]: string } = {
   ycrvUNIV_pool: '🌈',
 }
 
-const Farms: React.FC = ({ children }) => {
+const Boxes: React.FC = ({ children }) => {
 
-  const [farms, setFarms] = useState<Farm[]>([])
+  const [boxes, setBoxes] = useState<Box[]>([])
   const bento = useBento()
 
   const fetchPools = useCallback(async () => {
     const pools: { [key: string]: Contract} = await getPoolContracts(bento)
 
-    const farmsArr: Farm[] = []
+    const boxesArr: Box[] = []
     const poolKeys = Object.keys(pools)
 
     for (let i = 0; i < poolKeys.length; i++) {
@@ -67,7 +67,7 @@ const Farms: React.FC = ({ children }) => {
           } else {
             tokenAddress = await method().call()
           }
-          farmsArr.push({
+          boxesArr.push({
             contract: pool,
             name: NAME_FOR_POOL[poolKey],
             depositToken: tokenKey,
@@ -82,8 +82,8 @@ const Farms: React.FC = ({ children }) => {
         }
       }
     }
-    setFarms(farmsArr)
-  }, [bento, setFarms])
+    setBoxes(boxesArr)
+  }, [bento, setBoxes])
 
   useEffect(() => {
     if (bento) {
@@ -92,10 +92,10 @@ const Farms: React.FC = ({ children }) => {
   }, [bento, fetchPools])
 
   return (
-    <Context.Provider value={{ farms }}>
+    <Context.Provider value={{ boxes }}>
       {children}
     </Context.Provider>
   )
 }
 
-export default Farms
+export default Boxes

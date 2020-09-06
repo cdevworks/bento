@@ -8,7 +8,7 @@ import { useWallet } from 'use-wallet'
 
 import StaticsCards from "../Statics/componnents/StaticsCards"
 
-import farmer from '../../assets/img/farmer.png'
+import boxer from '../../assets/img/boxer.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'
@@ -24,7 +24,7 @@ const Statics: React.FC = () => {
         <>
           <Route exact path={path}>
             <PageHeader
-              icon={<img src={farmer} height="96" />}
+              icon={<img src={boxer} height="96" />}
               subtitle="Earn BENTO tokens by providing liquidity."
               title="Statistics"
             />
