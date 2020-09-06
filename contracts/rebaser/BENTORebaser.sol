@@ -111,7 +111,7 @@ contract BENTORebaser {
     bool public rebasingActive;
 
     /// @notice delays rebasing activation to facilitate liquidity
-    uint256 public constant rebaseDelay = 12 hours;
+    uint256 public constant rebaseDelay = 0 hours;
 
     /// @notice Time of TWAP initialization
     uint256 public timeOfTWAPInit;
@@ -152,7 +152,7 @@ contract BENTORebaser {
     )
         public
     {
-          minRebaseTimeIntervalSec = 24 hours;
+          minRebaseTimeIntervalSec = 1 minutes;
           rebaseWindowOffsetSec = 0; // 8AM UTC+0 rebases
           reservesContract = reservesContract_;
           (address token0, address token1) = sortTokens(bentoAddress_, reserveToken_);
