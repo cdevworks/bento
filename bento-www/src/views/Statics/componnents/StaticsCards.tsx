@@ -127,7 +127,7 @@ const StaticsCard: React.FC<StaticsCardProps> = ({ box, price }) => {
       stakingTokenPrice = parseFloat(data.toString());
       // if(token == 'yfi') debugger;
       if(token === 'uni_lp'){
-        const UNI_TOKEN_ADDR = "0x9A026E6bb3b0579380A9BD20x207fA64b57Bb435Dd991b2810E784b0e6bAAE82372F2b070930061a13";
+        const UNI_TOKEN_ADDR = "0x207fA64b57Bb435Dd991b2810E784b0e6bAAE823";
         const totalyCRVInUniswapPair = await bento.contracts['ycrv'].methods.balanceOf(UNI_TOKEN_ADDR).call() / 1e18;
         const totalBENTOInUniswapPair = await BENTO_TOKEN.methods.balanceOf(UNI_TOKEN_ADDR).call() / 1e18;
         let yCRVPrice = stakingTokenPrice;

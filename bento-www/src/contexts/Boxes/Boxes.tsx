@@ -63,7 +63,7 @@ const Boxes: React.FC = ({ children }) => {
         try {
           let tokenAddress = ''
           if (tokenKey === 'uni_lp') {
-            tokenAddress = '0x9A026E6bb3b0579380A9BD20x207fA64b57Bb435Dd991b2810E784b0e6bAAE82372F2b070930061a13'
+            tokenAddress = '0x207fA64b57Bb435Dd991b2810E784b0e6bAAE823'
           } else {
             tokenAddress = await method().call()
           }
