@@ -84,7 +84,7 @@ const Box: React.FC = () => {
     return (
       <YamNotifyView>
         <p>
-          If you want Add liquidity to Uniswap, please use this <a href='https://app.uniswap.org/#/add/0x777800323Df8F098F93ECf6C2ab3c80EceA87c87/0xa36085F69e2889c224210F603D836748e7dC0088'>Uniswap link</a>.
+          If you want Add liquidity to Uniswap, please use this <a href='https://app.uniswap.org/#/add/0xFe357bae7e3378bcA1bdaeC792d5B1bA00AA9414/0xa36085F69e2889c224210F603D836748e7dC0088'>Uniswap link</a>.
         </p>
       </YamNotifyView>
     )

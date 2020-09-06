@@ -625,7 +625,7 @@ contract LPTokenWrapper {
 }
 
 contract BENTOLENDPool is LPTokenWrapper, IRewardDistributionRecipient {
-    IERC20 public bento = IERC20(0x777800323Df8F098F93ECf6C2ab3c80EceA87c87);
+    IERC20 public bento = IERC20(0xFe357bae7e3378bcA1bdaeC792d5B1bA00AA9414);
     uint256 public constant DURATION = 5184000; // 30 days
 
     uint256 public starttime = 1599429600; // 2020-08-20 00:00:00 (UTC +00:00)
