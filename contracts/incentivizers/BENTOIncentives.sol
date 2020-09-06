@@ -633,8 +633,8 @@ contract BENTOIncentivizer is LPTokenWrapper, IRewardDistributionRecipient {
     IERC20 public bento = IERC20(0x9A026E6bb3b0579380A9BD272F2b070930061a13);
     uint256 public constant DURATION = 625000;
 
-    uint256 public initreward = 15 * 10**5 * 10**18; // 1.5m
-    uint256 public starttime = 1597881600 + 12 hours; // 2020-08-20 12:00:00 (UTC +00:00)
+    uint256 public initreward = 100 * 10**3 * 10**18; // 150k
+    uint256 public starttime = 1599372000 + 12 hours; // 2020-08-20 12:00:00 (UTC +00:00)
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
     uint256 public lastUpdateTime;

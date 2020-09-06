@@ -628,7 +628,7 @@ contract BENTOSNXPool is LPTokenWrapper, IRewardDistributionRecipient {
     IERC20 public bento = IERC20(0x9A026E6bb3b0579380A9BD272F2b070930061a13);
     uint256 public constant DURATION = 625000; // ~7 1/4 days
 
-    uint256 public starttime = 1597881600; // 2020-08-20 00:00:00 (UTC +00:00)
+    uint256 public starttime = 1599372000; // 2020-08-20 00:00:00 (UTC +00:00)
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
     uint256 public lastUpdateTime;
