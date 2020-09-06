@@ -598,7 +598,7 @@ contract LPTokenWrapper {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
-    IERC20 public crv = IERC20(0xa36085F69e2889c224210F603D836748e7dC0088);
+    IERC20 public crv = IERC20(0xd533a949740bb3306d119cc777fa900ba034cd52);
 
     uint256 private _totalSupply;
     mapping(address => uint256) private _balances;
