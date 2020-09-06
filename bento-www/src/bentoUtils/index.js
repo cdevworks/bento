@@ -118,7 +118,7 @@ export const getCurrentPrice = async (bento) => {
 }
 
 export const getTargetPrice = async (bento) => {
-  return bento.toBigN(1).toFixed(2);
+  return bento.toBigN(10).toFixed(20);
 }
 
 export const getCirculatingSupply = async (bento) => {
