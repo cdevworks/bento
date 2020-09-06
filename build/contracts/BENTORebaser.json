@@ -9006,7 +9006,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 22454,
+                              "referencedDeclaration": 22212,
                               "src": "11357:4:21",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -11943,7 +11943,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "17449:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -12451,7 +12451,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "16890:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -12987,7 +12987,7 @@
                                         "name": "this",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 22454,
+                                        "referencedDeclaration": 22212,
                                         "src": "16255:4:21",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -13613,7 +13613,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "15707:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -14121,7 +14121,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "15148:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -14657,7 +14657,7 @@
                                         "name": "this",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 22454,
+                                        "referencedDeclaration": 22212,
                                         "src": "14620:4:21",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -33270,7 +33270,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 22454,
+                              "referencedDeclaration": 22212,
                               "src": "11357:4:21",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -36207,7 +36207,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "17449:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -36715,7 +36715,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "16890:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -37251,7 +37251,7 @@
                                         "name": "this",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 22454,
+                                        "referencedDeclaration": 22212,
                                         "src": "16255:4:21",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -37877,7 +37877,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "15707:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -38385,7 +38385,7 @@
                                               "name": "this",
                                               "nodeType": "Identifier",
                                               "overloadedDeclarations": [],
-                                              "referencedDeclaration": 22454,
+                                              "referencedDeclaration": 22212,
                                               "src": "15148:4:21",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -38921,7 +38921,7 @@
                                         "name": "this",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 22454,
+                                        "referencedDeclaration": 22212,
                                         "src": "14620:4:21",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_contract$_BENTORebaser_$19607",
@@ -49560,7 +49560,7 @@
     }
   },
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-06T05:27:34.493Z",
+  "updatedAt": "2020-09-06T05:37:57.109Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {
