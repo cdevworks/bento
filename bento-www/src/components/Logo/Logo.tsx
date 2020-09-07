@@ -6,8 +6,8 @@ import boxer from '../../assets/img/boxer.png'
 const Logo: React.FC = () => {
   return (
     <StyledLogo>
-      <img src={boxer} height="32" style={{ marginTop: -4 }} />
-      <StyledText>BENTO Boxer</StyledText>
+      <img src={boxer} height="50" style={{ marginTop: -4 }} />
+      <StyledText>Bento</StyledText>
     </StyledLogo>
   )
 }
