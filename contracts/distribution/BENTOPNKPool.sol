@@ -598,7 +598,7 @@ contract LPTokenWrapper {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
-    IERC20 public yfii = IERC20(0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83);
+    IERC20 public pnk = IERC20(0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d);
 
     uint256 private _totalSupply;
     mapping(address => uint256) private _balances;
@@ -614,17 +614,17 @@ contract LPTokenWrapper {
     function stake(uint256 amount) public {
         _totalSupply = _totalSupply.add(amount);
         _balances[msg.sender] = _balances[msg.sender].add(amount);
-        yfii.safeTransferFrom(msg.sender, address(this), amount);
+        pnk.safeTransferFrom(msg.sender, address(this), amount);
     }
 
     function withdraw(uint256 amount) public {
         _totalSupply = _totalSupply.sub(amount);
         _balances[msg.sender] = _balances[msg.sender].sub(amount);
-        yfii.safeTransfer(msg.sender, amount);
+        pnk.safeTransfer(msg.sender, amount);
     }
 }
 
-contract BENTOYFIIPool is LPTokenWrapper, IRewardDistributionRecipient {
+contract BENTOPNKPool is LPTokenWrapper, IRewardDistributionRecipient {
     IERC20 public bento = IERC20(0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB);
     uint256 public constant DURATION = 625000; // ~7 1/4 days
 

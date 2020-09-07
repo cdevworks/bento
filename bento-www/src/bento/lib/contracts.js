@@ -17,9 +17,9 @@ import UNIRouterJson from './uniR.json';
 
 // basic pool
 import WETHPoolJson from '../clean_build/contracts/BENTOETHPool.json';
-import YAMPoolJson from '../clean_build/contracts/BENTOYAMPool.json';
+import YAMPoolJson from '../clean_build/contracts/BENTOSUSHIPool.json';
 import YFIPoolJson from '../clean_build/contracts/BENTOYFIPool.json';
-import YFIIPoolJson from '../clean_build/contracts/BENTOYFIIPool.json';
+import PNKPoolJson from '../clean_build/contracts/BENTOPNKPool.json';
 import MKRPoolJson from '../clean_build/contracts/BENTOMKRPool.json';
 import LENDPoolJson from '../clean_build/contracts/BENTOLENDPool.json';
 import COMPPoolJson from '../clean_build/contracts/BENTOCOMPPool.json';
@@ -51,7 +51,7 @@ export class Contracts {
     this.eth_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
     // this.weth_pool = this.eth_pool;
     this.yfi_pool = new this.web3.eth.Contract(YFIPoolJson.abi);
-    this.yfii_pool = new this.web3.eth.Contract(YFIIPoolJson.abi);
+    this.pnk_pool = new this.web3.eth.Contract(PNKPoolJson.abi);
     this.yam_pool = new this.web3.eth.Contract(YAMPoolJson.abi);
     this.crv_pool = new this.web3.eth.Contract(CRVPoolJson.abi);
     this.comp_pool = new this.web3.eth.Contract(COMPPoolJson.abi);
@@ -72,7 +72,7 @@ export class Contracts {
     this.link = new this.web3.eth.Contract(ERC20Json.abi);
     this.lend = new this.web3.eth.Contract(ERC20Json.abi);
     this.mkr = new this.web3.eth.Contract(ERC20Json.abi);
-    this.yfii = new this.web3.eth.Contract(ERC20Json.abi);
+    this.pnk = new this.web3.eth.Contract(ERC20Json.abi);
     this.snx = new this.web3.eth.Contract(ERC20Json.abi);
     this.ycrv = new this.web3.eth.Contract(ERC20Json.abi);
     this.erc20 = new this.web3.eth.Contract(ERC20Json.abi);
@@ -107,7 +107,7 @@ export class Contracts {
       { contract: this.timelock, json: BENTOTimelockJson },
       { contract: this.eth_pool, json: WETHPoolJson },
       { contract: this.yfi_pool, json: YFIPoolJson },
-      { contract: this.yfii_pool, json: YFIIPoolJson },
+      { contract: this.pnk_pool, json: PNKPoolJson },
       { contract: this.yam_pool, json: YAMPoolJson },
       { contract: this.crv_pool, json: CRVPoolJson },
       { contract: this.mkr_pool, json: MKRPoolJson },
@@ -126,7 +126,7 @@ export class Contracts {
       ),
     );
     this.yfi.options.address = addressMap["YFI"];
-    this.yfii.options.address = addressMap["YFII"];
+    this.pnk.options.address = addressMap["PNK"];
     this.crv.options.address = addressMap["CRV"];
     this.yam.options.address = addressMap["YAM"];
     this.weth.options.address = addressMap["WETH"];
@@ -144,7 +144,7 @@ export class Contracts {
       {"tokenAddr": this.yam.options.address, "poolAddr": this.yam_pool.options.address},
       {"tokenAddr": this.weth.options.address, "poolAddr": this.eth_pool.options.address},
       {"tokenAddr": this.yfi.options.address, "poolAddr": this.yfi_pool.options.address},
-      {"tokenAddr": this.yfii.options.address, "poolAddr": this.yfii_pool.options.address},
+      {"tokenAddr": this.pnk.options.address, "poolAddr": this.pnk_pool.options.address},
       {"tokenAddr": this.crv.options.address, "poolAddr": this.crv_pool.options.address},
       {"tokenAddr": this.comp.options.address, "poolAddr": this.comp_pool.options.address},
       {"tokenAddr": this.link.options.address, "poolAddr": this.link_pool.options.address},
