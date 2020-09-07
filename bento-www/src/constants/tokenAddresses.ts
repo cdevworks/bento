@@ -1,1 +1,1 @@
-export const bento = '0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB'
+export const bento = '0x8a727D058761F021Ea100a1c7b92536aC27b762A'

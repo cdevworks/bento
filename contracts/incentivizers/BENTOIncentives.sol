@@ -597,7 +597,7 @@ contract LPTokenWrapper {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
-    IERC20 public uni_lp = IERC20(0x4eFdFe92F7528Bd16b95083d7Ba1b247De32F549);
+    IERC20 public uni_lp = IERC20(0x9Ca884A5dF7ABe4619035596D39D912A1A02340D);
 
     uint256 private _totalSupply;
 
@@ -630,7 +630,7 @@ interface BENTO {
 }
 
 contract BENTOIncentivizer is LPTokenWrapper, IRewardDistributionRecipient {
-    IERC20 public bento = IERC20(0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB);
+    IERC20 public bento = IERC20(0x8a727D058761F021Ea100a1c7b92536aC27b762A);
     uint256 public constant DURATION = 7776000; // 30 Days
 
     uint256 public initreward = 100 * 10**3 * 10**18; // 100k

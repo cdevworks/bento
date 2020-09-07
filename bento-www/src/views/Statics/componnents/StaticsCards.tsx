@@ -19,7 +19,7 @@ export interface BentoContext {
   bento?: typeof Bento
 }
 
-const ADDRESS = '0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB';
+const ADDRESS = '0x8a727D058761F021Ea100a1c7b92536aC27b762A';
 let currentPrice = 0;
 let bento: any;
 const BoxCards: React.FC = () => {
@@ -127,7 +127,7 @@ const StaticsCard: React.FC<StaticsCardProps> = ({ box, price }) => {
       stakingTokenPrice = parseFloat(data.toString());
       // if(token == 'yfi') debugger;
       if(token === 'uni_lp'){
-        const UNI_TOKEN_ADDR = "0x4eFdFe92F7528Bd16b95083d7Ba1b247De32F549";
+        const UNI_TOKEN_ADDR = "0x9Ca884A5dF7ABe4619035596D39D912A1A02340D";
         const totalyCRVInUniswapPair = await bento.contracts['ycrv'].methods.balanceOf(UNI_TOKEN_ADDR).call() / 1e18;
         const totalBENTOInUniswapPair = await BENTO_TOKEN.methods.balanceOf(UNI_TOKEN_ADDR).call() / 1e18;
         let yCRVPrice = stakingTokenPrice;

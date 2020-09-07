@@ -281,7 +281,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 22434,
+                                "referencedDeclaration": 22192,
                                 "src": "2146:4:13",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$16725",
@@ -1488,7 +1488,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 22434,
+                                "referencedDeclaration": 22192,
                                 "src": "4766:4:13",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$16725",
@@ -2853,7 +2853,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 22434,
+                                "referencedDeclaration": 22192,
                                 "src": "2146:4:13",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$16725",
@@ -4060,7 +4060,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 22434,
+                                "referencedDeclaration": 22192,
                                 "src": "4766:4:13",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$16725",
@@ -5158,7 +5158,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-07T01:33:27.713Z",
+  "updatedAt": "2020-09-07T17:01:10.468Z",
   "devdoc": {
     "details": "Collection of functions related to the address type",
     "methods": {}
