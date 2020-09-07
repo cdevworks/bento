@@ -11,12 +11,12 @@ import MobileMenu from './components/MobileMenu'
 import TopBar from './components/TopBar'
 
 import ProposalsProvider from './contexts/Proposals'
-import FarmsProvider from './contexts/Farms'
+import BoxesProvider from './contexts/Boxes'
 import ModalsProvider from './contexts/Modals'
 import BentoProvider from './contexts/BentoProvider'
 import TransactionProvider from './contexts/Transactions'
 
-import Farms from './views/Farms'
+import Boxes from './views/Boxes'
 import Vote from './views/Vote'
 import Home from './views/Home'
 import Statics from './views/Statics'
@@ -41,8 +41,8 @@ const App: React.FC = () => {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/farms">
-            <Farms />
+          <Route path="/boxes">
+            <Boxes />
           </Route>
           <Route path="/vote">
             <Vote />
@@ -63,11 +63,11 @@ const Providers: React.FC = ({ children }) => {
         <BentoProvider>
           <TransactionProvider>
             <ModalsProvider>
-              <FarmsProvider>
+              <BoxesProvider>
                 <ProposalsProvider>
                   {children}
                 </ProposalsProvider>
-              </FarmsProvider>
+              </BoxesProvider>
             </ModalsProvider>
           </TransactionProvider>
         </BentoProvider>

@@ -8,56 +8,56 @@ import CardContent from '../../../components/CardContent'
 import CardIcon from '../../../components/CardIcon'
 import Loader from '../../../components/Loader'
 
-import useFarms from '../../../hooks/useFarms'
+import useBoxes from '../../../hooks/useBoxes'
 
-import { Farm } from '../../../contexts/Farms'
+import { Box } from '../../../contexts/Boxes'
 
 import { getPoolStartTime } from '../../../bentoUtils'
 
-const FarmCards: React.FC = () => {
-  const [farms] = useFarms()
+const BoxCards: React.FC = () => {
+  const [boxes] = useBoxes()
 
-  const rows = farms.reduce<Farm[][]>((farmRows, farm) => {
-    const newFarmRows = [...farmRows]
-    if (newFarmRows[newFarmRows.length - 1].length === 3) {
-      newFarmRows.push([farm])
+  const rows = boxes.reduce<Box[][]>((boxRows, box) => {
+    const newBoxRows = [...boxRows]
+    if (newBoxRows[newBoxRows.length - 1].length === 3) {
+      newBoxRows.push([box])
     } else {
-      newFarmRows[newFarmRows.length - 1].push(farm)
+      newBoxRows[newBoxRows.length - 1].push(box)
     }
-    return newFarmRows
+    return newBoxRows
   }, [[]])
 
   return (
     <StyledCards>
-      {!!rows[0].length ? rows.map((farmRow, i) => (
+      {!!rows[0].length ? rows.map((boxRow, i) => (
         <StyledRow key={i}>
-          {farmRow.map((farm, j) => (
+          {boxRow.map((box, j) => (
             <React.Fragment key={j}>
-              <FarmCard farm={farm} />
+              <BoxCard box={box} />
               {(j === 0 || j === 1) && <StyledSpacer />}
             </React.Fragment>
           ))}
         </StyledRow>
       )) : (
           <StyledLoadingWrapper>
-            <Loader text="Loading farms" />
+            <Loader text="Loading boxes" />
           </StyledLoadingWrapper>
         )}
     </StyledCards>
   )
 }
 
-interface FarmCardProps {
-  farm: Farm,
+interface BoxCardProps {
+  box: Box,
 }
 
-const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
+const BoxCard: React.FC<BoxCardProps> = ({ box }) => {
   const [startTime, setStartTime] = useState(0)
 
   const getStartTime = useCallback(async () => {
-    const startTime = await getPoolStartTime(farm.contract)
+    const startTime = await getPoolStartTime(box.contract)
     setStartTime(startTime)
-  }, [farm, setStartTime])
+  }, [box, setStartTime])
 
   const renderer = (countdownProps: CountdownRenderProps) => {
     const { hours, minutes, seconds } = countdownProps
@@ -70,31 +70,31 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
   }
 
   useEffect(() => {
-    if (farm && farm.id === 'uni_lp') {
+    if (box && box.id === 'uni_lp') {
       getStartTime()
     }
-  }, [farm, getStartTime])
+  }, [box, getStartTime])
   
   const poolActive = startTime * 1000 - Date.now() <= 0
   
   return (
     <StyledCardWrapper>
-      {farm.id === 'uni_lp' && (
+      {box.id === 'uni_lp' && (
         <StyledCardAccent />
       )}
       <Card>
         <CardContent>
           <StyledContent>
-            <CardIcon>{farm.icon}</CardIcon>
-            <StyledTitle>{farm.name}</StyledTitle>
+            <CardIcon>{box.icon}</CardIcon>
+            <StyledTitle>{box.name}</StyledTitle>
             <StyledDetails>
-              <StyledDetail>Deposit {farm.depositToken.toUpperCase()}</StyledDetail>
-              <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
+              <StyledDetail>Deposit {box.depositToken.toUpperCase()}</StyledDetail>
+              <StyledDetail>Earn {box.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Button
               disabled={!poolActive}
               text={poolActive ? 'Select' : undefined}
-              to={`/farms/${farm.id}`}
+              to={`/boxes/${box.id}`}
             >
               {!poolActive && <Countdown date={new Date(startTime * 1000)} renderer={renderer} />}
             </Button>
@@ -187,4 +187,4 @@ const StyledDetail = styled.div`
   color: ${props => props.theme.color.grey[500]};
 `
 
-export default FarmCards
+export default BoxCards

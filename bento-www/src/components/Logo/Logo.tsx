@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import farmer from '../../assets/img/farmer.png'
+import boxer from '../../assets/img/boxer.png'
 
 const Logo: React.FC = () => {
   return (
     <StyledLogo>
-      <img src={farmer} height="32" style={{ marginTop: -4 }} />
-      <StyledText>BENTO Farmer</StyledText>
+      <img src={boxer} height="32" style={{ marginTop: -4 }} />
+      <StyledText>BENTO Boxer</StyledText>
     </StyledLogo>
   )
 }

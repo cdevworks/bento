@@ -1,6 +1,6 @@
 import { Contract } from "web3-eth-contract"
 
-export interface Farm {
+export interface Box {
   contract: Contract,
   name: string,
   depositToken: string,
@@ -11,6 +11,6 @@ export interface Farm {
   id: string,
 }
 
-export interface FarmsContext {
-  farms: Farm[]
+export interface BoxesContext {
+  boxes: Box[]
 }
