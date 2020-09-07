@@ -37,7 +37,7 @@ const Home: React.FC = () => {
   }, [bento])
 
   const countdownBlock = () => {
-    const date = Date.parse("2020-08-20T00:00:00+0000");
+    const date = Date.parse("2020-09-08T16:00:00+0000");
     if (Date.now() >= date) return "";
     return (
       <CountdownView>
