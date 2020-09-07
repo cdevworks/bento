@@ -8,7 +8,7 @@
       "type": "constructor"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":\"Context\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":50000},\"remappings\":[]},\"sources\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":{\"keccak256\":\"0x486a84e3702f8b025e12367f1a46c82729848ab8b5abe234d7667419ce42ca4a\",\"urls\":[\"bzz-raw://801a8e48b5cc4838b15b583f1ca83c5d9b32d8e4cd18dedff54816301c151216\",\"dweb:/ipfs/QmbyGDhG2jE4kpS6PQBQzzthvGF9vj3cPYatun4gZdKwvW\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":\"Context\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":50000},\"remappings\":[]},\"sources\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":{\"keccak256\":\"0xadf78c6e1eba96bba447ec30bf80cf19b8853c8df24da2d2db87aa88d4dcebea\",\"urls\":[\"bzz-raw://65a9fc26f8372114c65c9c300d7069b9df48fb62a9b844f7b53acbe38381d43f\",\"dweb:/ipfs/QmSAfxvprrHU1Gp8wDRSb36H5BLhBZhPHxnRp9HCcSyf3M\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -10683,7 +10683,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307834654664466539324637353238426431366239353038336437426131623234374465333246353439",
+                  "hexValue": "307839436138383441356446374142653436313930333535393644333944393132413141303233343044",
                   "id": 15840,
                   "isConstant": false,
                   "isLValue": false,
@@ -12208,7 +12208,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307843384432414232613646644562433235343332453534393431636238356235356239663135326442",
+                  "hexValue": "307838613732374430353837363146303231456131303061316337623932353336614332376237363241",
                   "id": 15960,
                   "isConstant": false,
                   "isLValue": false,
@@ -30763,7 +30763,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307834654664466539324637353238426431366239353038336437426131623234374465333246353439",
+                  "hexValue": "307839436138383441356446374142653436313930333535393644333944393132413141303233343044",
                   "id": 15840,
                   "isConstant": false,
                   "isLValue": false,
@@ -32288,7 +32288,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307843384432414232613646644562433235343332453534393431636238356235356239663135326442",
+                  "hexValue": "307838613732374430353837363146303231456131303061316337623932353336614332376237363241",
                   "id": 15960,
                   "isConstant": false,
                   "isLValue": false,
@@ -40181,7 +40181,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-07T16:56:37.197Z",
+  "updatedAt": "2020-09-07T17:20:00.047Z",
   "devdoc": {
     "methods": {}
   },

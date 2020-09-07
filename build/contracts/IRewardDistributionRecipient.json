@@ -105,7 +105,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"reward\",\"type\":\"uint256\"}],\"name\":\"notifyRewardAmount\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_rewardDistribution\",\"type\":\"address\"}],\"name\":\"setRewardDistribution\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":\"IRewardDistributionRecipient\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":50000},\"remappings\":[]},\"sources\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":{\"keccak256\":\"0x486a84e3702f8b025e12367f1a46c82729848ab8b5abe234d7667419ce42ca4a\",\"urls\":[\"bzz-raw://801a8e48b5cc4838b15b583f1ca83c5d9b32d8e4cd18dedff54816301c151216\",\"dweb:/ipfs/QmbyGDhG2jE4kpS6PQBQzzthvGF9vj3cPYatun4gZdKwvW\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"reward\",\"type\":\"uint256\"}],\"name\":\"notifyRewardAmount\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_rewardDistribution\",\"type\":\"address\"}],\"name\":\"setRewardDistribution\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":\"IRewardDistributionRecipient\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":50000},\"remappings\":[]},\"sources\":{\"/home/dev/Documents/work/bento/contracts/incentivizers/BENTOIncentives.sol\":{\"keccak256\":\"0xadf78c6e1eba96bba447ec30bf80cf19b8853c8df24da2d2db87aa88d4dcebea\",\"urls\":[\"bzz-raw://65a9fc26f8372114c65c9c300d7069b9df48fb62a9b844f7b53acbe38381d43f\",\"dweb:/ipfs/QmSAfxvprrHU1Gp8wDRSb36H5BLhBZhPHxnRp9HCcSyf3M\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -10780,7 +10780,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307834654664466539324637353238426431366239353038336437426131623234374465333246353439",
+                  "hexValue": "307839436138383441356446374142653436313930333535393644333944393132413141303233343044",
                   "id": 15840,
                   "isConstant": false,
                   "isLValue": false,
@@ -12305,7 +12305,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307843384432414232613646644562433235343332453534393431636238356235356239663135326442",
+                  "hexValue": "307838613732374430353837363146303231456131303061316337623932353336614332376237363241",
                   "id": 15960,
                   "isConstant": false,
                   "isLValue": false,
@@ -30860,7 +30860,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307834654664466539324637353238426431366239353038336437426131623234374465333246353439",
+                  "hexValue": "307839436138383441356446374142653436313930333535393644333944393132413141303233343044",
                   "id": 15840,
                   "isConstant": false,
                   "isLValue": false,
@@ -32385,7 +32385,7 @@
               "arguments": [
                 {
                   "argumentTypes": null,
-                  "hexValue": "307843384432414232613646644562433235343332453534393431636238356235356239663135326442",
+                  "hexValue": "307838613732374430353837363146303231456131303061316337623932353336614332376237363241",
                   "id": 15960,
                   "isConstant": false,
                   "isLValue": false,
@@ -40278,7 +40278,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-09-07T16:56:37.273Z",
+  "updatedAt": "2020-09-07T17:20:00.132Z",
   "devdoc": {
     "methods": {
       "isOwner()": {
