@@ -79,17 +79,17 @@ async function deployDistribution(deployer, network, accounts) {
 
     console.log("setting distributor");
     await Promise.all([
-        eth_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        sushi_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        yfi_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        lend_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        mkr_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        snx_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        comp_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        link_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        pnk_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        crv_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-        ycrv_pool.methods.setRewardDistribution("0x00007569643bc1709561ec2E86F385Df3759e5DD").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
+        eth_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        sushi_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        yfi_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        lend_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        mkr_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        snx_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        comp_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        link_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        pnk_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        crv_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+        ycrv_pool.methods.setRewardDistribution("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
       ]);
 
     let twenty = web3.utils.toBN(10**3).mul(web3.utils.toBN(10**18)).mul(web3.utils.toBN(15));
@@ -112,46 +112,46 @@ async function deployDistribution(deployer, network, accounts) {
     ]);
 
     await Promise.all([
-      eth_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      sushi_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      yfi_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      lend_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      mkr_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      snx_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      comp_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      link_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      pnk_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
-      crv_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x00007569643bc1709561ec2E86F385Df3759e5DD"}),
+      eth_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      sushi_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      yfi_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      lend_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      mkr_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      snx_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      comp_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      link_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      pnk_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
+      crv_pool.methods.notifyRewardAmount(twenty.toString()).send({from:"0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65"}),
 
       // incentives is a minter and prepopulates itself.
-      ycrv_pool.methods.notifyRewardAmount("0").send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 500000}),
+      ycrv_pool.methods.notifyRewardAmount("0").send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 500000}),
     ]);
 
     await Promise.all([
-      eth_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      sushi_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      yfi_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      lend_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      mkr_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      snx_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      comp_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      link_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      pnk_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      crv_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      ycrv_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
+      eth_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      sushi_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      yfi_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      lend_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      mkr_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      snx_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      comp_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      link_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      pnk_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      crv_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      ycrv_pool.methods.setRewardDistribution(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
     ]);
     await Promise.all([
-      eth_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      sushi_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      yfi_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      lend_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      mkr_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      snx_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      comp_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      link_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      pnk_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      crv_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
-      ycrv_pool.methods.transferOwnership(Timelock.address).send({from: "0x00007569643bc1709561ec2E86F385Df3759e5DD", gas: 100000}),
+      eth_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      sushi_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      yfi_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      lend_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      mkr_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      snx_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      comp_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      link_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      pnk_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      crv_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
+      ycrv_pool.methods.transferOwnership(Timelock.address).send({from: "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65", gas: 100000}),
     ]);
   }
 

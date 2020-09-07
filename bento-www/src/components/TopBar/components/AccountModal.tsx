@@ -32,7 +32,7 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
   }, [onDismiss])
 
   const onDelegateSelf = useDelegate().onDelegate
-  const onDelegateDev = useDelegate("0x00007569643bc1709561ec2E86F385Df3759e5DD").onDelegate
+  const onDelegateDev = useDelegate("0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65").onDelegate
 
   const bentoBalance = useTokenBalance(bentoAddress)
   const displayBalance = useMemo(() => {
@@ -41,7 +41,7 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
 
   const fetchVotes = useCallback(async () => {
     const votes = await getCurrentVotes(bento, account)
-    const devsVotes = await getCurrentVotes(bento, "0x00007569643bc1709561ec2E86F385Df3759e5DD")
+    const devsVotes = await getCurrentVotes(bento, "0x948239cdaDC680F64CBd25Ee7D6264C15Fd8Df65")
     const proposalThreshold = await getProposalThreshold(bento);
     setvotes(getDisplayBalance(votes))
     setdevsVotes(getDisplayBalance(devsVotes))
