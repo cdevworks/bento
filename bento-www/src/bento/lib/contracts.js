@@ -17,7 +17,7 @@ import UNIRouterJson from './uniR.json';
 
 // basic pool
 import WETHPoolJson from '../clean_build/contracts/BENTOETHPool.json';
-import YAMPoolJson from '../clean_build/contracts/BENTOSUSHIPool.json';
+import SUSHIPoolJson from '../clean_build/contracts/BENTOSUSHIPool.json';
 import YFIPoolJson from '../clean_build/contracts/BENTOYFIPool.json';
 import PNKPoolJson from '../clean_build/contracts/BENTOPNKPool.json';
 import MKRPoolJson from '../clean_build/contracts/BENTOMKRPool.json';
@@ -52,7 +52,7 @@ export class Contracts {
     // this.weth_pool = this.eth_pool;
     this.yfi_pool = new this.web3.eth.Contract(YFIPoolJson.abi);
     this.pnk_pool = new this.web3.eth.Contract(PNKPoolJson.abi);
-    this.yam_pool = new this.web3.eth.Contract(YAMPoolJson.abi);
+    this.yam_pool = new this.web3.eth.Contract(SUSHIPoolJson.abi);
     this.crv_pool = new this.web3.eth.Contract(CRVPoolJson.abi);
     this.comp_pool = new this.web3.eth.Contract(COMPPoolJson.abi);
     this.link_pool = new this.web3.eth.Contract(LINKPoolJson.abi);
@@ -108,7 +108,7 @@ export class Contracts {
       { contract: this.eth_pool, json: WETHPoolJson },
       { contract: this.yfi_pool, json: YFIPoolJson },
       { contract: this.pnk_pool, json: PNKPoolJson },
-      { contract: this.yam_pool, json: YAMPoolJson },
+      { contract: this.yam_pool, json: SUSHIPoolJson },
       { contract: this.crv_pool, json: CRVPoolJson },
       { contract: this.mkr_pool, json: MKRPoolJson },
       { contract: this.snx_pool, json: SNXPoolJson },
