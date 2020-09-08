@@ -52,7 +52,7 @@ export class Contracts {
     // this.weth_pool = this.eth_pool;
     this.yfi_pool = new this.web3.eth.Contract(YFIPoolJson.abi);
     this.pnk_pool = new this.web3.eth.Contract(PNKPoolJson.abi);
-    this.yam_pool = new this.web3.eth.Contract(SUSHIPoolJson.abi);
+    this.sushi_pool = new this.web3.eth.Contract(SUSHIPoolJson.abi);
     this.crv_pool = new this.web3.eth.Contract(CRVPoolJson.abi);
     this.comp_pool = new this.web3.eth.Contract(COMPPoolJson.abi);
     this.link_pool = new this.web3.eth.Contract(LINKPoolJson.abi);
@@ -64,11 +64,11 @@ export class Contracts {
     // this.uni_lp_pool = this.ycrvUNIV_pool;
 
     this.yfi = new this.web3.eth.Contract(ERC20Json.abi);
-    this.yam = new this.web3.eth.Contract(ERC20Json.abi);
+    this.sushi = new this.web3.eth.Contract(ERC20Json.abi);
     this.crv = new this.web3.eth.Contract(ERC20Json.abi);
     this.bento = new this.web3.eth.Contract(BENTOJson.abi);
     this.comp = new this.web3.eth.Contract(ERC20Json.abi);
-    this.yam = new this.web3.eth.Contract(ERC20Json.abi);
+    this.sushi = new this.web3.eth.Contract(ERC20Json.abi);
     this.link = new this.web3.eth.Contract(ERC20Json.abi);
     this.lend = new this.web3.eth.Contract(ERC20Json.abi);
     this.mkr = new this.web3.eth.Contract(ERC20Json.abi);
@@ -108,7 +108,7 @@ export class Contracts {
       { contract: this.eth_pool, json: WETHPoolJson },
       { contract: this.yfi_pool, json: YFIPoolJson },
       { contract: this.pnk_pool, json: PNKPoolJson },
-      { contract: this.yam_pool, json: SUSHIPoolJson },
+      { contract: this.sushi_pool, json: SUSHIPoolJson },
       { contract: this.crv_pool, json: CRVPoolJson },
       { contract: this.mkr_pool, json: MKRPoolJson },
       { contract: this.snx_pool, json: SNXPoolJson },
@@ -128,7 +128,7 @@ export class Contracts {
     this.yfi.options.address = addressMap["YFI"];
     this.pnk.options.address = addressMap["PNK"];
     this.crv.options.address = addressMap["CRV"];
-    this.yam.options.address = addressMap["YAM"];
+    this.sushi.options.address = addressMap["SUSHI"];
     this.weth.options.address = addressMap["WETH"];
     this.comp.options.address = addressMap["COMP"];
     this.link.options.address = addressMap["LINK"];
@@ -141,7 +141,7 @@ export class Contracts {
     this.uni_router.options.address = addressMap["UNIRouter"];
 
     this.pools = [
-      {"tokenAddr": this.yam.options.address, "poolAddr": this.yam_pool.options.address},
+      {"tokenAddr": this.sushi.options.address, "poolAddr": this.sushi_pool.options.address},
       {"tokenAddr": this.weth.options.address, "poolAddr": this.eth_pool.options.address},
       {"tokenAddr": this.yfi.options.address, "poolAddr": this.yfi_pool.options.address},
       {"tokenAddr": this.pnk.options.address, "poolAddr": this.pnk_pool.options.address},

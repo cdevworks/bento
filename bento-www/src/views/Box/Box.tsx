@@ -70,9 +70,9 @@ const Box: React.FC = () => {
     if (token != "yam") return ""
     return (
       <YamNotifyView>
-        <p> Box is good, but don't forget migration your YAM before Migration Deadline. </p>
+        <p></p>
         <p>
-          <a href='https://yam.finance/'>https://yam.finance/</a>
+          <a href=''></a>
         </p>
         {countdownBlock()}
       </YamNotifyView>
