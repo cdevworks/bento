@@ -109,7 +109,7 @@ const StaticsCard: React.FC<StaticsCardProps> = ({ box, price }) => {
 
     let hash: any = {
       yfi: ["yearn-finance"],
-      pnk: ["pinakion"],
+      pnk: ["kleros"],
       crv: ["curve-dao-token"],
       weth: ["ethereum"],
       link: ["chainlink"],
@@ -117,7 +117,7 @@ const StaticsCard: React.FC<StaticsCardProps> = ({ box, price }) => {
       comp: ["compound-governance-token"],
       snx: ["havven"],
       lend: ["ethlend"],
-      uni_lp: ["curve-fi-ydai-yusdc-yusdt-ytusd"]
+      uni_lp: ["chainlink"]
     }
     let stakingTokenPrice = 1;
     if (Object.keys(hash).includes(token))  {
