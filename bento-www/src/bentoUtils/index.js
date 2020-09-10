@@ -55,7 +55,7 @@ export const harvest = async (poolContract, account) => {
   if (now >= 1597172400) {
     return poolContract.methods
       .getReward()
-      .send({ from: account, gas: 400000 })
+      .send({ from: account, gas: 900000 })
       .on('transactionHash', tx => {
         console.log(tx)
         return tx.transactionHash
