@@ -6,8 +6,7 @@ const Nav: React.FC = () => {
     <StyledNav>
       <StyledLink href="https://github.com/Sumo-Finance/bento">Github</StyledLink>
       <StyledLink href="https://twitter.com/SumoFinance">Twitter</StyledLink>
-      <StyledLink href="https://uniswap.info/pair/0x9ca884a5df7abe4619035596d39d912a1a02340d">Add Liquidity</StyledLink>
-      <StyledLink href="https://www.https://www.youtube.com/watch?v=dQw4w9WgXcQ.com">Lol</StyledLink>    
+      <StyledLink href="https://app.uniswap.org/#/add/0x8a727D058761F021Ea100a1c7b92536aC27b762A/0x514910771AF9Ca656af840dff83E8264EcF986CA">BENTO/LINK UNIV2</StyledLink>
     </StyledNav>
   )
 }
