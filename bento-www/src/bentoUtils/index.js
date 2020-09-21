@@ -136,10 +136,10 @@ export const getCirculatingSupply = async (bento) => {
   if (timePassed < 0) {
     return 0;
   }
-  let bentosDistributed = bento.toBigN(8 * timePassed * 250000 / 625000); //bentos from first 8 pools
+  let bentosDistributed = bento.toBigN(8 * timePassed * 150000 / 5184000); //bentos from first 8 pools
   let starttimePool2 = bento.toBigN(await bento.contracts.ycrvUNIV_pool.methods.starttime().call()).toNumber();
   timePassed = now["timestamp"] - starttime;
-  let pool2Yams = bento.toBigN(timePassed * 1500000 / 625000); // bentos from second pool. note: just accounts for first week
+  let pool2Yams = bento.toBigN(timePassed * 100000 / 5184000); // bentos from second pool. note: just accounts for first week
   let circulating = pool2Yams.plus(bentosDistributed).times(scalingFactor).div(10**36).toFixed(2)
   return circulating
 }
