@@ -118,7 +118,14 @@ export const getCurrentPrice = async (bento) => {
 }
 
 export const getTargetPrice = async (bento) => {
-  return bento.toBigN(18).toFixed(2);
+  var yourUrl = 'https://api.coingecko.com/api/v3/coins/chainlink?developer_data=false&community_data=false&tickers=false'
+  var Httpreq = new XMLHttpRequest();
+  Httpreq.open("GET",yourUrl,false);
+  Httpreq.send(null);
+  var jsonObj = JSON.parse(Httpreq.responseText);
+  var usdPrice = jsonObj.market_data.current_price.usd;
+  //return bento.toBigN(18).toFixed(2);
+  return usdPrice
 }
 
 export const getCirculatingSupply = async (bento) => {
