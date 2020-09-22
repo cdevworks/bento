@@ -114,8 +114,10 @@ export const getStaked = async (bento, pool, account) => {
 
 export const getCurrentPrice = async (bento) => {
   // FORBROCK: get current BENTO price
-  return bento.toBigN(await bento.contracts.rebaser.methods.getCurrentTWAP().call())
-}
+  return bento.toBigN(
+    await bento.contracts.rebaser.methods.getCurrentTWAP().call()
+  );
+};
 
 export const getTargetPrice = async (bento) => {
   var yourUrl = 'https://api.coingecko.com/api/v3/coins/chainlink?developer_data=false&community_data=false&tickers=false'
